@@ -9,12 +9,20 @@
 
 }
 body{
+    margin: 0;
     background-color: var(--background-color);
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
+}
 
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 4px solid tomato;
+    /* background-color: blueviolet; */
 }
 
     .list{
@@ -29,6 +37,8 @@ body{
 #FFFFFF60% колір text в футер: тел і милo
 #ECECEC - колір background header в середині
 */
+
+
 
 /* Header */
 
