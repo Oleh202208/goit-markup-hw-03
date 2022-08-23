@@ -26,7 +26,10 @@ body{
 }
 
     .list{
+        padding: 0;
+        margin: 0;
     list-style: none;
+    /* text-align: center; */
     }
     .linka{
         text-decoration: none;
@@ -99,29 +102,33 @@ text-decoration: none;
 
 /* Замовити послугу Hero */
 .service-title{
+    margin-top: 0;
+    margin-bottom: 30px;
 color: #FFFFFF;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
-text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 }
 .hero{
     background-color: #2F303A ;
+    text-align: center;
 }
 
 /* button */
 .button{
+    min-width: 216px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+padding: 10px 32px;
 color: var(--background-color);
 background-color: var(--accent-color);
 font-family: 'Roboto';
 font-weight: 700;
 font-size: 16px;
 line-height: 1.9;
-display: flex;
-align-items: center;
-text-align: center;
+/* align-items: center; */
 letter-spacing: 0.06em;
 
 }
@@ -140,7 +147,14 @@ letter-spacing: 0.06em;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.section-title-item{color: var(--title-text-color);
+.advances{
+    text-align: center;
+    padding: 94px 215px;
+} 
+.section-title-item{
+    margin: 0;
+    /* text-align: center; */
+    color: var(--title-text-color);
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -150,6 +164,7 @@ letter-spacing: 0.06em;
 }
 
 .section-title-advances-text{
+    /* text-align: center; */
     font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
@@ -158,6 +173,8 @@ letter-spacing: 0.06em;
 /* Чим займаємося */
 
 .section-title{
+    margin: 0;
+    padding-bottom: 50px;
 color:var(--title-text-color);
 font-style: normal;
 font-weight: 700;
@@ -181,6 +198,7 @@ text-align: center;
     }
 
 .section-title-work-pozition{
+    margin: 0;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.2;
@@ -189,11 +207,24 @@ text-align: center;
 
 /* Footer */
 
+.footer{
+    text-align: left;
+}
+.logo-footer{
+    padding-top: 60px;
+
+} 
+
 .logo-studio{
 color: var(--background-color);
+}
 
+.adres{
+    padding-top: 20px;
+    padding-bottom: 60px;
 }
 .footer-adress{
+
 color: var(--background-color);
 font-weight: 400;
 font-size: 14px;
@@ -201,6 +232,7 @@ line-height: 1.7;
 font-style: normal;
 }
 .footer-contacts{
+
 color: rgba(255, 255, 255, 0.6);
 font-family: 'Roboto';
 font-style: normal;
@@ -220,7 +252,13 @@ color: var(--accent-color);
 
 /* Портфоліо */
 
+/* .portfolio{
+    margin-top: 94px;
+    margin-bottom: 94px;
+} */
 .button-works{
+    padding: 6px 25px;
+    /* margin-bottom: 50px; */
 color: var(--title-text-color);
 background-color: #F5F4FA;
 font-family: 'Roboto';
@@ -231,8 +269,23 @@ line-height: 1.6;
 text-align: center;
 letter-spacing: 0.03em;
 cursor: pointer;
-
 }
+.one{
+min-width: 73px;
+}
+.two{
+min-width: 125px;
+}
+.three{
+min-width: 112px;
+}
+.four{
+min-width: 103px;
+}
+.five{
+min-width: 130px;
+}
+
 .button-works:hover,
 .button-works:focus{
     color: var(--background-color);
@@ -245,6 +298,7 @@ line-height: 2;
 color: var(--title-text-color)
 }
 .title-works-text{
+    margin: 0;
 font-size: 16px;
 line-height: 1.9;
 }
