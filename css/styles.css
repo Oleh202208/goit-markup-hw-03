@@ -128,6 +128,10 @@ text-decoration: none;
 
 
 /* Замовити послугу Hero */
+.title-hero{
+padding-top: 94px;
+}
+
 .service-title{
     margin-top: 0;
     margin-bottom: 30px;
@@ -230,7 +234,7 @@ margin-bottom: 200px;
 
 .section-title{
     margin-bottom: 50px;
-    padding-top: 94px;
+    /* padding-top: 94px; */
 color:var(--title-text-color);
 font-style: normal;
 font-weight: 700;
