@@ -17,31 +17,36 @@ body{
     letter-spacing: 0.03em;
 }
 
-.container{
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 4px solid tomato;
-    /* background-color: blueviolet; */
-}
-
-    .list{
-        padding: 0;
-        margin: 0;
-    list-style: none;
-    /* text-align: center; */
-    }
-    .linka{
-        text-decoration: none;
-    }
-
 /* 
 #EEEEEE - колір background в картинок в портфоліо
 #FFFFFF60% колір text в футер: тел і милo
 #ECECEC - колір background header в середині
 */
 
+/* Утіліти */
+.list{
+    padding: 0;
+    margin: 0;
+list-style: none;
+/* text-align: center; */
+}
+.linka{
+    text-decoration: none;
+}
 
+/* header-all */
+.header-all{
+    display: flex;
+    align-items: center;
+}
+/* container */
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* outline: 4px solid tomato; */
+    /* background-color: blueviolet; */
+}
 
 /* Header */
 
@@ -66,13 +71,26 @@ body{
     line-height: 1.2;
 }
 /* site-nav */
+.site-nav{
+    display: flex;
+    margin-left: 93px;
+}
+
+
+.site-nav .item + .item{
+    margin-left: 50px;
+}
 
 .site-nav .link{
-color: var(--title-text-color);
-font-weight: 500;
-font-size: 14px;
-line-height: 1.2;
-text-decoration: none;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    text-decoration: none;
 
 }
 
@@ -87,6 +105,15 @@ color: var(--accent-color);
 }
 
 /* contacts-nav */
+.contacts-nav{
+    display: flex;
+    margin-left: auto;
+}
+.contacts-nav .item + .item{
+    margin-left: 50px;
+}
+
+
 .contacts-nav .link{
     color: var(--primary-text-color);
 font-weight: 500;
@@ -135,6 +162,18 @@ letter-spacing: 0.06em;
 
 /* Переваги, advances*/
 
+.advances-text .item{
+    display: flex;
+    flex-wrap: wrap;
+    width: 270px;
+    background-color: tomato;
+}
+
+.advances-text{
+    display: flex;
+    flex-wrap: wrap;
+} 
+
 .visually-hidden{
     position: absolute;
     width: 1px;
@@ -148,8 +187,10 @@ letter-spacing: 0.06em;
     overflow: hidden;
 }
 .advances{
+    margin: 0;
+    padding: 0;
     text-align: center;
-    padding: 94px 215px;
+    /* padding: 94px 215px; */
 } 
 .section-title-item{
     margin: 0;
@@ -164,7 +205,6 @@ letter-spacing: 0.06em;
 }
 
 .section-title-advances-text{
-    /* text-align: center; */
     font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
@@ -252,13 +292,31 @@ color: var(--accent-color);
 
 /* Портфоліо */
 
-/* .portfolio{
-    margin-top: 94px;
-    margin-bottom: 94px;
+.imput{
+    display: block;
+    justify-content: center;
+    padding-top: 174px;
+    padding-bottom: 34px;
+}
+
+.item-works{
+    /* display: block;
+    justify-content: center;
+    align-items: center; */
+    margin-right: 8px;
+    
+    
+}
+.item-works:last-child{
+    margin-right: 0;
+}
+/* .item-works:not(:last-child) {
+    margin-right: 8px;
 } */
+
 .button-works{
+    display: inline-block;
     padding: 6px 25px;
-    /* margin-bottom: 50px; */
 color: var(--title-text-color);
 background-color: #F5F4FA;
 font-family: 'Roboto';
@@ -269,7 +327,10 @@ line-height: 1.6;
 text-align: center;
 letter-spacing: 0.03em;
 cursor: pointer;
+border-radius: 4px;
+border: 1px solid transparent;
 }
+
 .one{
 min-width: 73px;
 }
@@ -291,13 +352,50 @@ min-width: 130px;
     color: var(--background-color);
     background-color: var(--accent-color);
 }
+
+/* .portfolio{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.imgs{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    
+
+}
+
+.imgs-flex{
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+/* .imgs-flex {
+    margin-right: 0; 
+}   */
+.imgs-flex:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+/* Альтернатіва */
+/* .imgs-flex :not(:nth-child(3n)) {
+    margin-right: 0; 
+} */
+
 .title-works{
+    margin-left: auto;
+    display: block;
+    padding: 0 24px 20px 24px;
+    margin-bottom: 4px;
+    margin-top: 20px;
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 color: var(--title-text-color)
 }
 .title-works-text{
+    display: block;
+    padding: 0 24px 20px 24px; 
     margin: 0;
 font-size: 16px;
 line-height: 1.9;
