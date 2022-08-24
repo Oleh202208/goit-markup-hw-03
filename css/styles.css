@@ -157,6 +157,7 @@ font-size: 16px;
 line-height: 1.9;
 /* align-items: center; */
 letter-spacing: 0.06em;
+margin-bottom: 200px;
 
 }
 
@@ -166,13 +167,23 @@ letter-spacing: 0.06em;
     display: flex;
     flex-wrap: wrap;
     width: 270px;
-    background-color: tomato;
+    
 }
 
 .advances-text{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    padding-top: 94px;
+    margin-bottom: 86px;
+    
 } 
+.item{
+    margin-right: 30px;
+}
+.item:last-child{
+    margin-right: 0;
+}
 
 .visually-hidden{
     position: absolute;
@@ -186,15 +197,9 @@ letter-spacing: 0.06em;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.advances{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    /* padding: 94px 215px; */
-} 
+
 .section-title-item{
     margin: 0;
-    /* text-align: center; */
     color: var(--title-text-color);
     font-style: normal;
     font-weight: 700;
@@ -212,9 +217,20 @@ letter-spacing: 0.06em;
 
 /* Чим займаємося */
 
+.affairs{
+    display: flex;
+    margin-bottom: 94px;
+}
+.item-affairs{
+    margin-right: 30px;
+}
+.item-affairs:last-child{
+    margin-right: 0;
+}
+
 .section-title{
-    margin: 0;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    padding-top: 94px;
 color:var(--title-text-color);
 font-style: normal;
 font-weight: 700;
@@ -224,6 +240,18 @@ text-align: center;
 }
 
 /* Команда */
+
+
+.teams{
+    display: flex;
+    padding-bottom: 94px;
+}
+.item-teams{
+    margin-right: 30px;
+}
+.item-teams:last-child{
+    margin-right: 0;
+}
 
 .team{
     background-color:var(--background-color-second);
@@ -295,8 +323,8 @@ color: var(--accent-color);
 .imput{
     display: block;
     justify-content: center;
-    padding-top: 174px;
-    padding-bottom: 34px;
+    padding-top: 94px;
+    padding-bottom: 50px;
 }
 
 .item-works{
@@ -361,6 +389,7 @@ min-width: 130px;
 .imgs{
     display: flex;
     flex-wrap: wrap;
+    /* margin-bottom: 94px; */
     /* justify-content: space-between; */
     
 
@@ -376,6 +405,9 @@ min-width: 130px;
 .imgs-flex:nth-last-child(-n+3) {
     margin-bottom: 0;
 }
+.products{
+    margin-bottom: 94px;
+}
 
 /* Альтернатіва */
 /* .imgs-flex :not(:nth-child(3n)) {
@@ -385,7 +417,7 @@ min-width: 130px;
 .title-works{
     margin-left: auto;
     display: block;
-    padding: 0 24px 20px 24px;
+    padding: 0 24px;
     margin-bottom: 4px;
     margin-top: 20px;
 font-weight: 700;
@@ -395,7 +427,7 @@ color: var(--title-text-color)
 }
 .title-works-text{
     display: block;
-    padding: 0 24px 20px 24px; 
+    padding: 0 24px; 
     margin: 0;
 font-size: 16px;
 line-height: 1.9;
