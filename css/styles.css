@@ -11,7 +11,9 @@
 body{
     background-color: var(--background-color);
     color: var(--primary-text-color);
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
 /* 
@@ -19,6 +21,20 @@ body{
 #FFFFFF60% колір text в футер: тел і милo
 #ECECEC - колір background header в середині
 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+margin: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 /* Утіліти */
 .list{
@@ -49,6 +65,7 @@ list-style: none;
 
 .header{
     background-color: var(--background-color);
+    border-bottom: 1px solid #ECECEC ;
 }
 .logo{
     color:#000000;
@@ -181,9 +198,10 @@ letter-spacing: 0.06em;
 
 .advances-text{
     display: flex;
+    gap: 30px;
 } 
 .item{
-    margin-right: 30px; 
+    /* margin-right: 30px;  */
 } 
 
 .item:last-child{
@@ -216,8 +234,8 @@ margin-right: 0;
 }
 
 .section-title-advances-text{
-    margin: 0;
     line-height: 1.71;
+    font-size: 14px;
     }
 
 /* Чим займаємося */
@@ -348,12 +366,11 @@ color: var(--accent-color);
 .imput{
     display: block;
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .item-works{
-    margin-right: 30px;
+    margin-right: 8px;
 }
 .item-works:last-child{
     margin-right: 0;
@@ -408,26 +425,25 @@ min-width: 130px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding-bottom: 94px;
 }
 
 
 .title-works{
 margin-left: auto;
 display: block;
-padding: 0 24px;
-margin-bottom: 4px;
-margin-top: 20px;
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 color: var(--title-text-color)
 }
+
 .title-works-text{
     display: block;
-    padding: 0 24px; 
     margin: 0;
 font-size: 16px;
 line-height: 1.9;
 }
 
+.products-text{
+padding: 20px 24px;
+}
